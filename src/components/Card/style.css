@@ -1,0 +1,78 @@
+.cardTransaction {
+  display: flex;
+
+  background-color: var(--color-grey-1);
+
+  border-radius: 4px;
+
+  gap: 1rem;
+}
+
+.cardTransaction:hover {
+  box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 20%);
+}
+
+.cardTransaction .typeTransaction {
+  border-radius: 4px 0 0 4px;
+
+  width: 4px;
+
+  background-color: #03b898;
+}
+
+.cardTransaction .typeTransaction-out {
+  border-radius: 4px 0 0 4px;
+
+  width: 4px;
+
+  background-color: #d70000;
+}
+
+.transactionDetails {
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+
+  gap: 0.6rem;
+}
+
+.transactionDetails #desc {
+  font-size: var(--title-03);
+  font-weight: bold;
+
+  color: var(--color-grey-4);
+
+  margin-top: 0.6rem;
+}
+
+.transactionDetails #type {
+  font-size: var(--title-04);
+
+  color: var(--color-grey-3);
+}
+
+.transactionDetails #value {
+  font-size: var(--title-04);
+
+  color: var(--color-grey-4);
+}
+
+.transactionDetails > button {
+  margin-bottom: 0.6rem;
+
+  background-image: url("../../assets/trashdark.svg");
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-position: center;
+  background-color: var(--color-grey-2);
+
+  border-radius: 4px;
+
+  width: 25px;
+  height: 25px;
+}
+
+.transactionDetails > button:hover {
+  background-color: var(--color-grey-3);
+  background-image: url("../../assets/trash.svg");
+}

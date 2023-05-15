@@ -1,0 +1,46 @@
+:root {
+  --color-primary: #fd377e;
+  --color-primary-2: #e34981;
+  --color-secundary: #03b898;
+  --color-grey-1: #f8f9fa;
+  --color-grey-2: #e9ecef;
+  --color-grey-3: #868e96;
+  --color-grey-4: #212529;
+
+  --default-radius: 8px;
+
+  --title-01: 2.5rem;
+  --title-02: 1.4rem;
+  --title-03: 1rem;
+  --title-04: 0.8rem;
+  --headline: 1rem;
+  --body: 0.8rem;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--default-radius);
+}
+
+input {
+  border: none;
+  border-radius: var(--default-radius);
+  background-color: var(--color-grey-1);
+  color: var(--color-grey-3);
+}
+
+label {
+  font-size: var(--title-04);
+}
+
+select {
+  border: none;
+  border-radius: var(--default-radius);
+  background-color: var(--color-grey-1);
+}

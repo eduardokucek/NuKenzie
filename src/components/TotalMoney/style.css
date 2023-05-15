@@ -1,0 +1,46 @@
+.totalContainer {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 0.6rem;
+}
+
+.totalContainer > p {
+  font-size: var(--title-03);
+  font-weight: bold;
+  text-align: left;
+
+  margin-left: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.totalMoney {
+  display: flex;
+  flex-direction: column;
+
+  border: solid 1px var(--color-grey-2);
+  border-radius: 4px;
+
+  height: 100px;
+
+  padding: 1.2rem;
+
+  text-align: left;
+
+  gap: 1rem;
+}
+
+.totalMoney > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalMoney > div > #totalValue {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.totalMoney > span {
+  font-size: var(--title-04);
+  color: var(--color-grey-3);
+}

@@ -1,0 +1,113 @@
+.containerTotalForm {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 4rem;
+}
+
+.containerForm {
+  height: 313px;
+
+  padding: 0.6rem;
+}
+
+.formContainer {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+
+  border: 1px solid var(--color-grey-2);
+  border-radius: 4px;
+
+  padding: 1.2rem;
+
+  gap: 1rem;
+}
+
+.formContainer > button {
+  height: 48px;
+  width: 100%;
+
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.formContainer > button:hover {
+  background-color: var(--color-primary-2);
+  color: var(--color-grey-1);
+}
+
+.formContainer .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+.formContainer .description > label {
+  margin: 0 0 0.4rem 0.2rem;
+}
+
+.formContainer .description #desc {
+  height: 50px;
+  width: 100%;
+  max-width: 650px;
+
+  padding: 0 1rem;
+}
+
+.formContainer .description > span {
+  font-size: var(--title-04);
+  color: var(--color-grey-3);
+
+  margin: 0.2rem 0 0 0.2rem;
+}
+
+.formContainer .value {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  gap: 1rem;
+}
+
+.formContainer .value > div {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  width: 100%;
+}
+
+.formContainer .value > div > label {
+  margin: 0 0 0.4rem 0.2rem;
+}
+
+.formContainer .value > div > span {
+  position: absolute;
+  top: 38px;
+  left: 6px;
+}
+
+.formContainer .value div #value {
+  height: 50px;
+  width: 100%;
+
+  padding: 0 0.2rem 0 2rem;
+}
+
+.formContainer .value > div > select {
+  height: 50px;
+  width: 100%;
+}

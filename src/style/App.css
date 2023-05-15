@@ -1,0 +1,132 @@
+.App {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+
+  gap: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .containerList {
+    height: 342px;
+  }
+}
+
+@media (min-width: 769px) {
+  .App {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .homePage {
+    flex-direction: row;
+
+    padding: 0 6rem;
+
+    gap: 2rem;
+  }
+
+  .homePage > img {
+    width: 26rem;
+  }
+
+  .homePage > div {
+    width: 380px;
+  }
+
+  .homePage > img {
+    width: 600px;
+  }
+
+  .homePage > div > button {
+    width: 260px;
+    align-self: flex-start;
+  }
+
+  .header {
+    padding: 0 7rem;
+  }
+
+  .containerTotalForm {
+    align-items: center;
+
+    width: 450px;
+
+    margin-top: 0;
+
+    gap: 0.5rem;
+  }
+
+  .containerForm {
+    margin-top: 80px;
+
+    width: 100%;
+  }
+
+  .containerList {
+    height: 85vh;
+    width: 500px;
+
+    padding: 0 0.6rem 0.6rem;
+
+    margin-top: 86px;
+
+    gap: 1rem;
+  }
+
+  .containerList > p {
+    font-size: var(--title-03);
+  }
+
+  .totalContainer {
+    padding: 0;
+
+    width: 100%;
+
+    padding: 0.55rem;
+  }
+
+  .totalContainer > p {
+    margin-left: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  .cardTransaction {
+    height: 80px;
+    width: 100%;
+  }
+
+  .cardTransaction .transactionDetails {
+    position: relative;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    width: 100%;
+  }
+
+  .cardTransaction .transactionDetails #desc {
+    margin-top: 0;
+  }
+
+  .cardTransaction .transactionDetails #type {
+    position: absolute;
+    top: 46px;
+    left: 16px;
+  }
+
+  .cardTransaction .transactionDetails #value {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .containerList .cardTransaction {
+    width: 100%;
+  }
+}
